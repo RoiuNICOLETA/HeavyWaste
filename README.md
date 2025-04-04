@@ -28,3 +28,6 @@ Built in <72 hours as per challenge instructions
 # Submission Info
 Please find the public GitHub repository here:
 🔗 https://github.com/RoiuNICOLETA/HeavyWaste
+
+A live testable version will be submitted using this form:
+🔗 https://forms.gle/N6nKLgW8CMqZ2eFY8
