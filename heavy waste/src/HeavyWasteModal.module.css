@@ -1,0 +1,150 @@
+.modal {
+  background: grey;
+  color: #ffc;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 20px #a7888880;
+}
+
+.notice {
+  background: #406574;
+  border-left: 4px solid #ffa500;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  color: #ffc;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.option {
+  background: transparent;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  gap: 0.75rem;
+  border: 1.5px solid #4c4a4a;
+  border-left: 4px solid #212020;
+  transition: 0.2s ease;
+}
+
+.option:hover {
+  border-color: #406574;
+}
+
+.option input {
+  margin-top: 5px;
+}
+
+.option.selected {
+  border-color: #f6c05b;
+  background-color: #86a7b4;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.bottModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restrictionsBox {
+  width: 95%;
+  background: #406574;
+  color: #ffc;
+  padding: 1rem;
+  border-left: 4px solid #ffa500;
+  border-radius: 10px;
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.infoIcon {
+  font-size: 1.5rem;
+  margin-top: 2px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cancelBtn {
+  background: transparent;
+  border: 1px solid #777;
+  color: #ffc;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-left: 4px solid #212020;
+}
+
+.cancelBtn:hover {
+  background-color: #333;
+}
+
+.continueBtn {
+  background: #406574;
+  color: #ffc;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  border-left: 4px solid #212020;
+}
+
+.continueBtn:hover {
+  background-color: #333;
+}
+@media (max-width: 768px) {
+  .optionsGrid {
+    grid-template-columns: 1fr; /* O coloană pe mobil */
+  }
+
+  .modal {
+    padding: 1rem;
+    border-radius: 0;
+    max-width: 100%;
+    height: 100%;
+    box-shadow: none;
+  }
+
+  .bottModal {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .restrictionsBox {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .buttonGroup button {
+    width: 80%;
+  }
+}
